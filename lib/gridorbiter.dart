@@ -214,7 +214,7 @@ class _MainGridViewState extends State<MainGridView> {
     final feedback = widget.feedback;
     final childWhenDragging = widget.childWhenDragging;
 
-    return LongPressDraggable(
+    return Draggable(
       data: isFromArrange ? "h$pos" : "$pos",
       child: mainWidget,
       feedback: widget.isCustomFeedback && feedback != null ? feedback(pos) : mainWidget,
